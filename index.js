@@ -112,39 +112,6 @@ function runBenchmark(options) {
         index: {
             indexed_field_string_1: {
                 type: 'string'
-            },
-            indexed_field_number_1: {
-                type: 'number'
-            },
-            indexed_field_bool_1: {
-                type: 'boolean'
-            },
-            indexed_field_string_2: {
-                type: 'string'
-            },
-            indexed_field_number_2: {
-                type: 'number'
-            },
-            indexed_field_bool_2: {
-                type: 'boolean'
-            },
-            indexed_field_string_3: {
-                type: 'string'
-            },
-            indexed_field_number_3: {
-                type: 'number'
-            },
-            indexed_field_bool_3: {
-                type: 'boolean'
-            },
-            indexed_field_string_4: {
-                type: 'string'
-            },
-            indexed_field_number_4: {
-                type: 'number'
-            },
-            indexed_field_bool_4: {
-                type: 'boolean'
             }
         },
         options: {
@@ -173,18 +140,7 @@ function runBenchmark(options) {
                     nb: options.nbVms,
                     addConcurrency: options.addVmsConcurrency
                 }, {
-                    indexed_field_string_1: 'foo',
-                    indexed_field_number_1: 42,
-                    indexed_field_bool_1: true,
-                    indexed_field_string_2: 'foo',
-                    indexed_field_number_2: 42,
-                    indexed_field_bool_2: true,
-                    indexed_field_string_3: 'foo',
-                    indexed_field_number_3: 42,
-                    indexed_field_bool_3: true,
-                    indexed_field_string_4: 'foo',
-                    indexed_field_number_4: 42,
-                    indexed_field_bool_4: true
+                    indexed_field_string_1: 'foo'
                 }, next);
             },
             function upgradeBucket(arg, next) {
